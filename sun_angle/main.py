@@ -11,7 +11,7 @@ class SunAngle:
     _origin_in_minutes: int = 360
     _minimum_angle: int = 0
     _maximum_angle: int = 180
-    _supported_time_format: str = r'^^(([0-1]{1}[0-9]{1})|([2]{1}[0-4]{1})):[0-5]{1}[0-9]{1}$$'
+    _supported_time_format: str = r'^(([0-1]{1}[0-9]{1})|([2]{1}[0-4]{1})):[0-5]{1}[0-9]{1}$'
 
     def __init__(self, current_time: str) -> None:
         self.current_time = current_time
